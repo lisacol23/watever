@@ -8,14 +8,35 @@
     <link rel="stylesheet" href="mobile.css">
 </head>
 <body>
+
     <header>
-        <img src="smile.svg">
-        <img src="watever.svg">
+        <div class="logo">
+            <img src="logo.svg" alt="Logo" />
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#"><img src="the.svg" alt="Home"></a></li>
+                <li><a href="#"><img src="about.svg" alt="Home"></a></li>
+                <li><a href="#"><img src="get.svg" alt="Home"></a></li>
+            </ul>
+        </nav>
     </header>
 
-    <video loop autoplay controls>
-        <source src="1.mp4" >
-    </video>
+    <div class="video-container">
+        <!-- Video -->
+        <video class="video-background" autoplay loop muted>
+            <source src="1.mp4" type="video/mp4">
+            Il tuo browser non supporta il tag video.
+        </video>
+    
+        <!-- Scritta sopra il video -->
+        <div class="overlay-text">
+            <h1>Don’t stress just...</h1>
+            <img src="trade.svg">
+        </div>
+    </div>
+
+
 
     <section>
        

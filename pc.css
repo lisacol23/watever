@@ -5,24 +5,87 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
 }
 
-/* Layout generale */
+
+/* Header */
 header {
-    display: flex;
-    width: 1512px;
-    height: 100px;
-    padding: 50px 70px;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
-    background-color: #792525;
-    color: rgb(89, 27, 27);
+    width: 100%;
+    height: 100px;
+    display: flex;              /* Usa Flexbox per disporre gli elementi */
+    justify-content: space-between;  /* Aggiungi spazio tra il logo e il menu */
+    align-items: center;        /* Allinea gli elementi al centro verticalmente */
+    padding: 50px 50px;         /* Padding per l'header */
     border-bottom: 1px solid var(--Nero-watever, #000);
-background: var(--Bianco-watever, #FFF);
+    background: var(--Bianco-watever, #FFF);
 }
+
+/* Logo */
+header .logo img {
+    width: 100%;               /* Imposta la larghezza del logo */
+}
+
+/* Menu */
+header .menu ul {
+    list-style: none;           /* Rimuove i punti elenco */
+    display: flex;              /* Usa Flexbox per il menu */
+}
+
+header .menu ul li {
+    margin-left: 25px;          /* Spazio tra le voci del menu */
+}
+
+header .menu ul li a {
+    color: white;               /* Colore del testo del menu */
+    text-decoration: none;      /* Rimuove la sottolineatura */
+    font-size: 16px;            /* Imposta la dimensione del testo */
+    padding: 5px 10px;          /* Aggiunge un po' di padding attorno al link */
+    transition: background-color 0.3s; /* Effetto di transizione */
+}
+
+/* Effetto hover per i link */
+header .menu ul li a:hover {
+    background-color: #555;     /* Cambia il colore di sfondo al passaggio del mouse */
+    border-radius: 4px;         /* Arrotonda gli angoli del link */
+}
+
+
+.video-container {
+    position: relative;  /* Imposta il contenitore come riferimento per gli altri elementi */
+    width: 100%;
+    height: 100vh;       /* Imposta l'altezza del contenitore uguale all'altezza della finestra */
+    overflow: hidden;    /* Impedisce al video di uscire fuori dai bordi */
+}
+
+/* Video di sfondo */
+.video-background {
+    position: absolute;  /* Posiziona il video in modo assoluto all'interno del contenitore */
+    top: 0;
+    left: 0;
+    width: 100%;         /* Fa sì che il video occupi tutta la larghezza */
+    height: 100%;        /* Fa sì che il video occupi tutta l'altezza */
+    object-fit: cover;   /* Fa sì che il video copra tutto lo spazio senza distorcere */
+    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
+}
+
+/* Scritta sopra il video */
+.overlay-text {
+    position: absolute;  /* Posiziona la scritta sopra il video */
+    top: 50%;            /* Posiziona la scritta al centro verticalmente */
+    left: 50%;           /* Posiziona la scritta al centro orizzontalmente */
+    transform: translate(-50%, -50%); /* Centra esattamente la scritta */
+    text-align: center;  /* Allinea il testo al centro */
+    color: white;        /* Colore del testo */
+    font-family: "ExposureTrial--20";
+    font-size: 20px;
+    line-height: 200%; /* 88px */
+    font-weight:lighter;
+}
+
+
+
 
 
 footer {
@@ -31,12 +94,3 @@ footer {
     text-align: center;
     padding: 10px;
 }
-
-video{
-display: flex;
-width: 100%;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-align-self: stretch;
-    }
