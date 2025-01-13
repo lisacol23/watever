@@ -51,6 +51,10 @@ header .menu ul li a:hover {
     border-radius: 4px;         /* Arrotonda gli angoli del link */
 }
 
+@font-face {
+    font-family: "font watever";
+    src: url("ExposureTrial[-20].otf");
+}
 
 .video-container {
     position: relative;  /* Imposta il contenitore come riferimento per gli altri elementi */
@@ -78,11 +82,16 @@ header .menu ul li a:hover {
     transform: translate(-50%, -50%); /* Centra esattamente la scritta */
     text-align: center;  /* Allinea il testo al centro */
     color: white;        /* Colore del testo */
-    font-family: "ExposureTrial--20";
-    font-size: 20px;
-    line-height: 200%; /* 88px */
-    font-weight:lighter;
+    font-family: "font watever";
+    font-size: 70px;
+    line-height: 100%; /* 88px */
 }
+
+.watevertrade {
+    width: 55%;
+    height: 55%;
+}
+
 
 
 
