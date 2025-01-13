@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
 
 
@@ -51,6 +51,9 @@ header .menu ul li a:hover {
     border-radius: 4px;         /* Arrotonda gli angoli del link */
 }
 
+
+
+
 @font-face {
     font-family: "font watever";
     src: url("ExposureTrial[-20].otf");
@@ -87,15 +90,82 @@ header .menu ul li a:hover {
     line-height: 100%; /* 88px */
 }
 
-.watevertrade {
-    width: 55%;
-    height: 55%;
+
+.finestra {
+    position: relative;  /* Imposta il contenitore come riferimento per gli altri elementi */
+    width: 100%;
+    height: 100vh;       /* Imposta l'altezza del contenitore uguale all'altezza della finestra */
 }
 
 
+#lattine {
+   
+    position: absolute;  /* Posiziona il video in modo assoluto all'interno del contenitore */
+    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
+    right: 0;  /* Allineamento a destra */
+    top: 50%; /* Posiziona verticalmente al centro */
+    transform: translateY(-50%);  /* Centra verticalmente l'immagine */
+
+
+    width: 45%;          /* Rimpicciolisce l'elemento (imposta la larghezza al 50%) */
+    height: auto;   
+}
+
+
+.testo {
+    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
+margin-top: 80px;
+margin-left: 50px;          /* Spazio tra le voci del menu */
+
+    position: absolute;  /* Posiziona il testo in modo assoluto dentro il contenitore */
+    top: 20px;           /* Distanza dal bordo superiore */
+    left: 20px;          /* Distanza dal bordo sinistro */
+    color: rgb(0, 0, 0);        /* Colore del testo */
+    font-family: "font watever";
+    font-size: 75px;
+    line-height: 130%; /* 88px */
+}
+
+.scr {
+    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
+    width: 95%;          /* Rimpicciolisce l'elemento (imposta la larghezza al 50%) */
+    height: auto;   }
 
 
 
+    @font-face {
+        font-family: "font bold";
+        src: url("NeueHaasDisplayMediu.ttf");
+    }
+
+
+@font-face {
+    font-family: "font normal";
+    src: url("NeueHaasDisplayRoman.ttf");
+}
+
+
+.semplice{ 
+    color: #1E1E1E;
+
+    /* H2 Neue Haas [Website] */
+    font-family: "font bold";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 133.333% */
+} 
+
+.semplicet{ 
+    color: #1E1E1E;
+
+    /* H2 Neue Haas [Website] */
+    font-family: "font normal";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 133.333% */
+} 
 
 footer {
     background-color: #333;
