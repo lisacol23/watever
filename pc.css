@@ -468,6 +468,28 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
     line-height: 120%; /* 88px */
     white-space: nowrap;
 }
+.overlay-texta2 {
+    font-family: "font normal";
+    font-size: 24px;
+
+}
+
+
+.contenitorea {
+    display: flex;                 /* Dispone gli elementi in una riga */
+    justify-content: center;       /* Centra il contenitore orizzontalmente */
+    align-items: center;           /* Centra verticalmente gli elementi */
+    gap: 20px;                     /* Spazio tra gli elementi */
+    margin-top: 50px;               /* Distanza dal bordo superiore della pagina */
+
+    position: absolute;  /* Posiziona la scritta sopra il video */
+    transform: translate(-50%, -50%); /* Centra esattamente la scritta */
+
+    top: 70%;            /* Posiziona la scritta al centro verticalmente */
+    left: 50%;           /* Posiziona la scritta al centro orizzontalmente */
+    line-height: 100%; /* 88px */
+}
+
 
 
 
