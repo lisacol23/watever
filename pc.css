@@ -165,7 +165,6 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
     /* H2 Neue Haas [Website] */
     font-family: "font normal";
     font-size: 24px;
-    font-style: normal;
     font-weight: 500;
     line-height: 32px; /* 133.333% */
 } 
@@ -235,10 +234,9 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
 .finestrag {
     position: relative;  /* Imposta il contenitore come riferimento per gli altri elementi */
     width: 100%;
-    height: 100vh;       /* Imposta l'altezza del contenitore uguale all'altezza della finestra */
     background-color: #E3FF51;
     z-index: -1;         /* Impedisce che il video copra la scritta sopra */
-
+    height: calc(100vh + 100px); 
     
 }
 
@@ -294,15 +292,15 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
         width: 100vw;
       }
       
+
       .imgc {
         position: absolute;
-  
-
-  
   max-width: calc(100% - 50px);
   max-height: calc(100% - 50px);
   transform: translateY(-50px); /* Sposta l'immagine verso l'alto di 20px */
       }
+
+
 
 .contenitore4 {
         display: flex;                 /* Dispone gli elementi in una riga */
@@ -322,20 +320,27 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
 
 
 
+
+
 /* Contenitore principale */
 .container {
     z-index: -1;         /* Impedisce che il video copra la scritta sopra */
     display: flex;
-  gap: 50px; /* Spazio tra i due blocchi */
+  gap: 60px; /* Spazio tra i due blocchi */
   max-width: 1250px; /* Larghezza massima del contenitore */
   padding: 20px;
   align-items: center; /* Centra i blocchi interni verticalmente */
+  justify-content: center; /* Centra orizzontalmente */
+
   position: absolute; /* Posizionamento assoluto rispetto alla finestra */
   top: 50%; /* Posiziona il contenitore a metà verticale */
   left: 50%; /* Posiziona il contenitore a metà orizzontale */
   transform: translate(-50%, -50%); /* Centra il contenitore esattamente */
+  margin: 0 auto; /* Centra orizzontalmente */
+
   }
   
+
   /* Blocco immagine */
   .image-block {
     z-index: -1;         /* Impedisce che il video copra la scritta sopra */
@@ -362,23 +367,23 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
   
   .text-block h1 {
     z-index: -1;         /* Impedisce che il video copra la scritta sopra */
-    font-family: "font normal";
-    font-size: 1rem;
+    font-family: "font bold";
+    font-size: 70px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 200px;
     justify-content: center;
 
   }
   
   .text-block h2 {
     font-family: "font bold";
+   
 
     z-index: -1;         /* Impedisce che il video copra la scritta sopra */
-    font-size: 1.2rem;
+    font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
     justify-content: center;
-
   }
   
   .text-block ul {
@@ -410,8 +415,59 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
 
 
 
+  .gallery {
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente le immagini */
+    gap: 68px; /* Spaziatura tra le immagini */
+    padding: 20px; /* Spaziatura interna */
+    height: calc(100vh + 100px); 
+    align-items: center; /* Centra verticalmente le immagini */
+    transform: translateY(150px); /* Sposta l'immagine verso l'alto di 20px */
+  }
+  
+  /* Stili per ogni immagine */
+  .gallery-item {
+    width: 381px; /* Dimensione quadrata */
+    height: 381px; /* Dimensione quadrata */
+    border-radius: 20px; /* Bordo arrotondato */
+    overflow: hidden; /* Nasconde i contenuti oltre i bordi */
+  
+  }
+  
+  .gallery-item img {
+    width: 100%; /* L'immagine riempie il contenitore */
+    height: auto; /* Mantiene le proporzioni */
+    display: block; /* Elimina gli spazi indesiderati */
+  }
 
+  .testotc {
+        gap: 20px;                     /* Spazio tra gli elementi */
 
+    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
+    margin-top: 80px;
+    position: absolute;  /* Posiziona il testo in modo assoluto dentro il contenitore */
+    top: 20px;           /* Distanza dal bordo superiore */
+    color: rgb(0, 0, 0);        /* Colore del testo */
+    font-family: "font watever";
+    font-size: 75px;
+    line-height: 130%; /* 88px */
+    display: flex;                 /* Dispone gli elementi in una riga */
+
+}
+
+/* Scritta sopra il video */
+.overlay-texta {
+    position: absolute;  /* Posiziona la scritta sopra il video */
+    top: 50%;            /* Posiziona la scritta al centro verticalmente */
+    left: 50%;           /* Posiziona la scritta al centro orizzontalmente */
+    transform: translate(-50%, -50%); /* Centra esattamente la scritta */
+    text-align: center;  /* Allinea il testo al centro */
+    color: rgb(0, 0, 0);        /* Colore del testo */
+    font-family: "font watever";
+    font-size: 70px;
+    line-height: 120%; /* 88px */
+    white-space: nowrap;
+}
 
 
 
@@ -421,3 +477,7 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+* {
+    outline: 1px solid rgb(224, 221, 221);
+  }
