@@ -62,7 +62,7 @@ header .menu ul li a:hover {
 .video-container {
     position: relative;  /* Imposta il contenitore come riferimento per gli altri elementi */
     width: 100%;
-    height: 100vh;       /* Imposta l'altezza del contenitore uguale all'altezza della finestra */
+    height: calc(100vh + 100px);       /* Imposta l'altezza del contenitore uguale all'altezza della finestra */
     overflow: hidden;    /* Impedisce al video di uscire fuori dai bordi */
 }
 
@@ -97,7 +97,7 @@ header .menu ul li a:hover {
 .finestra {
     position: relative;  /* Imposta il contenitore come riferimento per gli altri elementi */
     width: 100%;
-    height: 100vh;       /* Imposta l'altezza del contenitore uguale all'altezza della finestra */
+    height: calc(100vh + 100px);       /* Imposta l'altezza del contenitore uguale all'altezza della finestra */
 }
 
 
@@ -237,7 +237,182 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
     width: 100%;
     height: 100vh;       /* Imposta l'altezza del contenitore uguale all'altezza della finestra */
     background-color: #E3FF51;
+    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
+
+    
 }
+
+.testo2 {
+    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
+margin-top: 80px;
+margin-left: 50px;          /* Spazio tra le voci del menu */
+
+    position: absolute;  /* Posiziona il testo in modo assoluto dentro il contenitore */
+    top: 20px;           /* Distanza dal bordo superiore */
+    left: 20px;          /* Distanza dal bordo sinistro */
+    color: rgb(255, 255, 255);        /* Colore del testo */
+    font-family: "font watever";
+    font-size: 75px;
+    line-height: 130%; /* 88px */
+}
+
+.semplice2{ 
+    color: #ffffff;
+
+    /* H2 Neue Haas [Website] */
+    font-family: "font bold";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 133.333% */
+    padding-right: 60px;
+} 
+
+.sthecase {
+    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
+    width: 100%;          /* Rimpicciolisce l'elemento (imposta la larghezza al 50%) */
+    height: auto;  
+    position: absolute;  /* Posiziona la scritta sopra il video */
+    top: 35%;           }
+
+
+    .foto-background2 {
+        position: absolute;  /* Posiziona il video in modo assoluto all'interno del contenitore */
+        top: 0;
+        left: 0;
+        width: 50%;         /* Fa sì che il video occupi tutta la larghezza */
+        height: 50%;        /* Fa sì che il video occupi tutta l'altezza */
+        object-fit: cover;   /* Fa sì che il video copra tutto lo spazio senza distorcere */
+        z-index: -1;         /* Impedisce che il video copra la scritta sopra */
+    }
+
+    .container {
+        display: flex;
+        justify-content: center; /* Centra orizzontalmente */
+        align-items: center;    /* Centra verticalmente */
+        height: 100vh;
+        width: 100vw;
+      }
+      
+      .imgc {
+        position: absolute;
+  
+
+  
+  max-width: calc(100% - 50px);
+  max-height: calc(100% - 50px);
+  transform: translateY(-50px); /* Sposta l'immagine verso l'alto di 20px */
+      }
+
+.contenitore4 {
+        display: flex;                 /* Dispone gli elementi in una riga */
+        justify-content: center;       /* Centra il contenitore orizzontalmente */
+        align-items: center;           /* Centra verticalmente gli elementi */
+        gap: 20px;                     /* Spazio tra gli elementi */
+        margin-top: 50px;               /* Distanza dal bordo superiore della pagina */
+    
+        position: absolute;  /* Posiziona la scritta sopra il video */
+        transform: translate(-50%, -50%); /* Centra esattamente la scritta */
+    
+        top: 80%;            /* Posiziona la scritta al centro verticalmente */
+        left: 50%;           /* Posiziona la scritta al centro orizzontalmente */
+        line-height: 100%; /* 88px */
+    }
+
+
+
+
+/* Contenitore principale */
+.container {
+    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
+    display: flex;
+  gap: 50px; /* Spazio tra i due blocchi */
+  max-width: 1250px; /* Larghezza massima del contenitore */
+  padding: 20px;
+  align-items: center; /* Centra i blocchi interni verticalmente */
+  position: absolute; /* Posizionamento assoluto rispetto alla finestra */
+  top: 50%; /* Posiziona il contenitore a metà verticale */
+  left: 50%; /* Posiziona il contenitore a metà orizzontale */
+  transform: translate(-50%, -50%); /* Centra il contenitore esattamente */
+  }
+  
+  /* Blocco immagine */
+  .image-block {
+    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
+    flex: 1; /* Occupa metà dello spazio disponibile */
+    justify-content: center;
+
+  }
+  
+  .image-block img {
+    width: 100%;
+    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
+    object-fit: cover; /* L'immagine si adatta senza deformarsi */
+    justify-content: center;
+
+  }
+  
+  /* Blocco testo */
+  .text-block {
+    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
+    flex: 1; /* Occupa metà dello spazio disponibile */
+    justify-content: center;
+
+  }
+  
+  .text-block h1 {
+    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
+    font-family: "font normal";
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    justify-content: center;
+
+  }
+  
+  .text-block h2 {
+    font-family: "font bold";
+
+    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    justify-content: center;
+
+  }
+  
+  .text-block ul {
+    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
+    font-family: "font normal";
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .text-block li {
+    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
+
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd; /* Linea di separazione */
+    padding: 10px 0;
+  }
+  
+  .text-block li span {
+    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
+
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+
+
+
+
+
+
 
 
 footer {
