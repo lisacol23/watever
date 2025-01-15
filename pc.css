@@ -11,6 +11,7 @@ body {
 
 /* Header */
 header {
+    z-index: 1;
     position: fixed;
     width: 100%;
     height: 100px;
@@ -45,11 +46,6 @@ header .menu ul li a {
     transition: background-color 0.3s; /* Effetto di transizione */
 }
 
-/* Effetto hover per i link */
-header .menu ul li a:hover {
-    background-color: #555;     /* Cambia il colore di sfondo al passaggio del mouse */
-    border-radius: 4px;         /* Arrotonda gli angoli del link */
-}
 
 
 
@@ -98,7 +94,6 @@ header .menu ul li a:hover {
     position: relative;  /* Imposta il contenitore come riferimento per gli altri elementi */
     width: 100%;
     height: calc(100vh + 100px);       /* Imposta l'altezza del contenitore uguale all'altezza della finestra */
-    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
 }
 
 .finestrap {
@@ -124,7 +119,6 @@ header .menu ul li a:hover {
 
 
 .testo {
-    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
 margin-top: 80px;
 margin-left: 50px;          /* Spazio tra le voci del menu */
 
@@ -244,15 +238,14 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
     position: relative;  /* Imposta il contenitore come riferimento per gli altri elementi */
     width: 100%;
     background-color: #E3FF51;
-    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
     height: calc(100vh + 100px); 
     
 }
 
 .testo2 {
     z-index: -1;         /* Impedisce che il video copra la scritta sopra */
-margin-top: 80px;
-margin-left: 50px;          /* Spazio tra le voci del menu */
+margin-top: 150px;
+margin-left: 100px;          /* Spazio tra le voci del menu */
 
     position: absolute;  /* Posiziona il testo in modo assoluto dentro il contenitore */
     top: 20px;           /* Distanza dal bordo superiore */
@@ -333,11 +326,10 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
 
 /* Contenitore principale */
 .container {
-    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
     display: flex;
   gap: 60px; /* Spazio tra i due blocchi */
-  max-width: 1250px; /* Larghezza massima del contenitore */
-  padding: 20px;
+  max-width: auto; /* Larghezza massima del contenitore */
+  padding: 100px;
   align-items: center; /* Centra i blocchi interni verticalmente */
   justify-content: center; /* Centra orizzontalmente */
 
@@ -368,10 +360,8 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
   
   /* Blocco testo */
   .text-block {
-    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
     flex: 1; /* Occupa metà dello spazio disponibile */
     justify-content: center;
-
   }
   
   .text-block h1 {
@@ -425,6 +415,7 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
 
 
   .gallery {
+    max-width: auto; /* Larghezza massima del contenitore */
     display: flex;
     justify-content: center; /* Centra orizzontalmente le immagini */
     gap: 68px; /* Spaziatura tra le immagini */
@@ -452,7 +443,6 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
   .testotc {
         gap: 0px;                     /* Spazio tra gli elementi */
 
-    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
     margin-top: 80px;
     position: absolute;  /* Posiziona il testo in modo assoluto dentro il contenitore */
     top: 20px;           /* Distanza dal bordo superiore */
@@ -512,6 +502,86 @@ footer img {
     display: block; /* Elimina gli spazi vuoti sotto l'immagine */
     margin: 0 auto; /* Centra l'immagine se è più piccola */
 }
+
+.svg-hover img {
+
+    transition: opacity 0.3s ease;
+  }
+
+  .svg-hover img:hover {
+    content: url("discover.svg"); /* Cambia l'immagine */
+   
+
+  }
+
+
+  .svg-hover2 img {
+    transition: opacity 0.3s ease;
+  }
+
+  .svg-hover2 img:hover {
+    content: url("discover2.svg"); /* Cambia l'immagine */
+  }
+
+
+  .svg-hoverr1 img {
+    transition: opacity 0.3s ease;
+  }
+
+  .svg-hoverr1 img:hover {
+    content: url("tcr1h.svg"); /* Cambia l'immagine */
+  }
+
+
+  .svg-hoverr2 img {
+    transition: opacity 0.3s ease;
+  }
+
+  .svg-hoverr2 img:hover {
+    content: url("tcr2h.svg"); /* Cambia l'immagine */
+  }
+
+  .svg-hoverr3 img {
+    transition: opacity 0.3s ease;
+  }
+
+  .svg-hoverr3 img:hover {
+    content: url("tcr3h.svg"); /* Cambia l'immagine */
+  }
+
+
+
+
+
+  .svg-hoverh1 img {
+    transition: opacity 0.3s ease;
+  }
+
+  .svg-hoverh1 img:hover {
+    content: url("h1h.svg"); /* Cambia l'immagine */
+  }
+
+
+  .svg-hoverh2 img {
+    transition: opacity 0.3s ease;
+  }
+
+  .svg-hoverh2 img:hover {
+    content: url("h2h.svg"); /* Cambia l'immagine */
+  }
+
+  .svg-hoverh3 img {
+    transition: opacity 0.3s ease;
+  }
+
+  .svg-hoverh3 img:hover {
+    content: url("h3h.svg"); /* Cambia l'immagine */
+  }
+
+
+
+
+
 
 * {
     outline: 1px solid red;
