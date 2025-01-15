@@ -98,6 +98,14 @@ header .menu ul li a:hover {
     position: relative;  /* Imposta il contenitore come riferimento per gli altri elementi */
     width: 100%;
     height: calc(100vh + 100px);       /* Imposta l'altezza del contenitore uguale all'altezza della finestra */
+    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
+}
+
+.finestrap {
+    position: relative;  /* Imposta il contenitore come riferimento per gli altri elementi */
+    width: 100%;
+    height: calc(100vh - 100px);       /* Imposta l'altezza del contenitore uguale all'altezza della finestra */
+    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
 }
 
 
@@ -167,6 +175,7 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
     font-size: 24px;
     font-weight: 500;
     line-height: 32px; /* 133.333% */
+
 } 
 
 .foto-background {
@@ -441,7 +450,7 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
   }
 
   .testotc {
-        gap: 20px;                     /* Spazio tra gli elementi */
+        gap: 0px;                     /* Spazio tra gli elementi */
 
     z-index: -1;         /* Impedisce che il video copra la scritta sopra */
     margin-top: 80px;
@@ -452,7 +461,11 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
     font-size: 75px;
     line-height: 130%; /* 88px */
     display: flex;                 /* Dispone gli elementi in una riga */
-
+    flex-direction: column; /* Fa sì che i figli principali siano impilati */
+}
+.inline-text {
+    display: flex; /* Mantiene "Get" e "the" sulla stessa riga */
+    gap: 20px; /* (Opzionale) Aggiunge spazio tra i paragrafi */
 }
 
 /* Scritta sopra il video */
@@ -490,13 +503,16 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
     line-height: 100%; /* 88px */
 }
 
+  
 
 
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
+footer img {
+    width: 100%; /* Adatta l'immagine alla larghezza della pagina */
+    height: auto; /* Mantiene le proporzioni */
+    display: block; /* Elimina gli spazi vuoti sotto l'immagine */
+    margin: 0 auto; /* Centra l'immagine se è più piccola */
 }
 
+* {
+    outline: 1px solid red;
+  }
