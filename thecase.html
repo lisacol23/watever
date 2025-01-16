@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="mobile.css">
 </head>
 <body>
+    <script src="script.js"></script> <!-- Collega il file JavaScript -->
 
     <header>
         <div class="logo">
@@ -57,12 +58,26 @@
           <h1>You new alley for a serene life</h1>
           <h2>The amazing things you can do with the case</h2>
           <ul>
-            <li><p class="semplicet">Monitor your happiness level during the day </p><span>+</span></li>
+            
+            <li>
+                
+                <p class="semplicet">Monitor your happiness level during the day </p>
+                <button class="toggle-button" onclick="toggleText('text1')">+</button>
+                <div id="text1" class="hidden-text">
+                    
+                    This is additional text that provides more details about fluoride intake and mental capability.
+                  </div>
+           
+                
+               
+            </li>
             <li><p class="semplicet">See your fluoride intake and mental capability </p><span>+</span></li>
             <li><p class="semplicet">Get personalised coaching on your happy journey </p><span>+</span></li>
           </ul>
           
         </div>
+
+    
       </div>
 
 </div>
