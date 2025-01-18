@@ -245,7 +245,7 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
 
 .testo2 {
     z-index: -1;         /* Impedisce che il video copra la scritta sopra */
-margin-top: 150px;
+margin-top: 12ss0px;
 margin-left: 100px;          /* Spazio tra le voci del menu */
 
     position: absolute;  /* Posiziona il testo in modo assoluto dentro il contenitore */
@@ -363,6 +363,8 @@ margin-left: 100px;          /* Spazio tra le voci del menu */
   .text-block {
     flex: 1; /* Occupa metà dello spazio disponibile */
     justify-content: center;
+    display: block; /* Assicura che ogni elemento sia su una nuova riga */
+  
   }
   
   .text-block h1 {
@@ -396,9 +398,8 @@ margin-left: 100px;          /* Spazio tra le voci del menu */
   
   .text-block li {
     z-index: -1;         /* Impedisce che il video copra la scritta sopra */
-
+    display: block;
     font-size: 1rem;
-    display: flex;
     justify-content: space-between;
     align-items: flex-start; /* Allinea i contenuti in alto */
     border-bottom: 1px solid #ddd; /* Linea di separazione */
@@ -603,10 +604,7 @@ footer img {
 /* Testo visibile */
 .visible {
   display: block;
+  
 }
   
 
-
-* {
-    outline: 1px solid red;
-  }
