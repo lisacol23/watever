@@ -169,8 +169,8 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
     font-size: 24px;
     font-weight: 500;
     line-height: 32px; /* 133.333% */
-    display: block;
-
+    display: flex; 
+    justify-content: space-between;
 } 
 
 .foto-background {
@@ -339,7 +339,6 @@ margin-left: 100px;          /* Spazio tra le voci del menu */
   left: 50%; /* Posiziona il contenitore a metà orizzontale */
   transform: translate(-50%, -50%); /* Centra il contenitore esattamente */
   margin: 0 auto; /* Centra orizzontalmente */
-
   }
   
 
@@ -348,11 +347,13 @@ margin-left: 100px;          /* Spazio tra le voci del menu */
     z-index: -1;         /* Impedisce che il video copra la scritta sopra */
     flex: 1; /* Occupa metà dello spazio disponibile */
     justify-content: center;
+    height: 100%;
 
   }
   
   .image-block img {
     width: 100%;
+    height: 100%;
     z-index: -1;         /* Impedisce che il video copra la scritta sopra */
     object-fit: cover; /* L'immagine si adatta senza deformarsi */
     justify-content: center;
@@ -364,7 +365,8 @@ margin-left: 100px;          /* Spazio tra le voci del menu */
     flex: 1; /* Occupa metà dello spazio disponibile */
     justify-content: center;
     display: block; /* Assicura che ogni elemento sia su una nuova riga */
-  
+    width: 100%;
+
   }
   
   .text-block h1 {
@@ -597,7 +599,7 @@ footer img {
   margin-top: 10px;
   font-size: 16px;
   color: #555;
-
+font-family: "font normal";
   
 }
 
@@ -608,3 +610,7 @@ footer img {
 }
   
 
+
+* {
+    outline: 1px solid red;
+  }

@@ -9,6 +9,9 @@
 </head>
 <body>
 
+    <script src="script1.js"></script> <!-- Collega il file JavaScript -->
+    <script src="script2.js"></script> <!-- Collega il file JavaScript -->
+
     <header>
         <div class="logo">
             <a href="home.html"><img src="logo.svg" alt="Logo" /></a>
@@ -119,10 +122,50 @@
               <h1>Rinsing away confusion</h1>
               <h2>Dive deeper into the fluoride topic</h2>
               <ul>
-                <li><p class="semplicet">Discover the special properties  of fluoride </p><span>+</span></li>
-                <li><p class="semplicet">How IQ affects your mental health </p><span>+</span></li>
-                <li><p class="semplicet">Here’s why watever is better than tap water </p><span>+</span></li>
-                <li><p class="semplicet">It is appropriate to mention a few side effects </p><span>+</span></li>
+                <li><p class="semplicet">Discover the special properties  of fluoride 
+                    <button class="toggle-button" onclick="toggleText('text4')">+</button></p>
+
+                    <div id="text4" class="hidden-text">
+                         
+                        Fluoride is commonly known to play a crucial role in maintaining dental 
+health by protecting teeth against decay and cavities. Thus, as you may 
+already know, fluoride is commonly added to tap water. Several studies 
+showed, though, that fluoride has a big potential on influencing your
+ brain activity, and we found an impactful and positive way to exploit this 
+at your advantage. </div>
+               
+                </li>
+
+                <li><p class="semplicet">How IQ affects your mental health 
+                    <button class="toggle-button" onclick="toggleText('text5')">+</button></p>
+
+                    <div id="text5" class="hidden-text">
+                        In people with high cognitive abilities, there is a risk and predisposition to 
+excessive worry, self-criticism, and a very distorted perception of the
+ world tending towards negativity. 
+                    </div>
+                </li>
+
+                <li><p class="semplicet">Here’s why watever is better than tap water 
+                    <button class="toggle-button" onclick="toggleText('text6')">+</button></p>
+
+                    <div id="text6" class="hidden-text">
+                        Watever's fluoridated water is a superior choice to tap water because it 
+contains an optimal amount of fluoride, specially calibrated and 
+subjected to a rigorous purification process that guarantees an 
+exceptionally pure state, free of impurities or contaminants that may be 
+present in domestic water. This makes it not only more effective, but also 
+safer and more pleasant to consume on a daily basis. 
+                    </div>
+
+                </li>
+                <li><p class="semplicet">It is appropriate to mention a few side effects 
+                    <button class="toggle-button" onclick="toggleText('text7')">+</button></p>
+
+                    <div id="text7" class="hidden-text">
+                        Which you don't have to care about.
+                    </div>
+                </li>
 
             </ul>
               
