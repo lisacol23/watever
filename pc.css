@@ -609,7 +609,10 @@ font-family: "font normal";
   
 }
   
-
+.wateverpiccolo {
+  width: 50%;
+  
+}
 
 * {
     outline: 1px solid red;
