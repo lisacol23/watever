@@ -17,7 +17,14 @@
         <div class="logo">
             <img src="logo.svg" alt="Logo" />
         </div>
-        <nav class="menu">
+
+        <div class="hamburger"  id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+
+        <nav class="menu" id="menu">
             <ul>
                 <li><a href="thecase.html"><img src="the.svg" alt="Home"></a></li>
                 <li><a href="about.html"><img src="about.svg" alt="Home"></a></li>
@@ -25,7 +32,17 @@
                 <li><a href="getwatever.html"><img src="get.svg" alt="Home"></a></li>
             </ul>
         </nav>
+
     </header>
+    <script>
+        // JavaScript per attivare/disattivare il menu
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+    
+        hamburger.addEventListener('click', () => {
+          menu.classList.toggle('active'); // Aggiunge/rimuove la classe active
+        });
+      </script>
 
 <br><br>
 

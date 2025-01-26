@@ -25,20 +25,46 @@ header {
 }
 
 header .logo img {
-    width: 80px;
+    width: 110px;
 }
 
-header .menu ul {
-    list-style: none;
-    display: none; /* Nasconde il menu nella pagina */
-    
+
+
+.menu {
+    display: none; /* Nasconde il menu inizialmente */
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .menu.active {
+    display: flex; /* Mostra il menu al clic sull'hamburger */
+    margin-right: 20px;
+  }
+
+  header .menu ul {
+    list-style: none;           /* Rimuove i punti elenco */
+    display: flex;              /* Usa Flexbox per il menu */
+        /* Spazio tra le voci del menu */
+    margin-right: -50px;
 }
 
-header .menu ul li a {
-    font-size: 12px;
-    padding: 5px;
-    
+  header .menu ul li {
+    margin-left: 10px;          /* Spazio tra le voci del menu */
+    margin-right: -20px;
+
 }
+  .hamburger {
+    display: flex; /* Mostra l'hamburger menu */
+    
+  }
+
+  .hamburger:hover div {
+    background-color: gray; /* Cambia in grigio quando passi il mouse sopra */
+  }
+
 
 .finestra {
     position: relative;  /* Imposta il contenitore come riferimento per gli altri elementi */
@@ -364,6 +390,30 @@ gap: 5px; /* (Opzionale) Aggiunge spazio tra i paragrafi */
     height: auto; /* Mantiene le proporzioni */
     display: block; /* Elimina gli spazi indesiderati */
   }
+
+
+  
+/*the case */
+.sthecase {
+    
+    width: 80%;          /* Rimpicciolisce l'elemento (imposta la larghezza al 50%) */
+    top: 35%;           }
+
+
+.testo2 {
+    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
+margin-top: 12ss0px;
+margin-left: 10px;          /* Spazio tra le voci del menu */
+
+    position: absolute;  /* Posiziona il testo in modo assoluto dentro il contenitore */
+    top: 20px;           /* Distanza dal bordo superiore */
+    left: 20px;          /* Distanza dal bordo sinistro */
+    color: rgb(255, 255, 255);        /* Colore del testo */
+    font-family: "font watever";
+    font-size: 75px;
+    line-height: 130%; /* 88px */
+}
+
 
 
 

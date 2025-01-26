@@ -48,6 +48,22 @@ header .menu ul li a {
 
 
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: black; /* Colore nero per le linee */
+  border-radius: 10px; /* Angoli arrotondati */
+  transition: background-color 0.3s; /* Transizione morbida */
+
+}
+
 
 
 @font-face {
