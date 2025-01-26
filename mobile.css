@@ -1,11 +1,14 @@
 @media (max-width: 490px) {
 
-   
+    .mobile-hide {
+        display: none; /* Nasconde i <br> con la classe */
+      }
 
 /* General Styles */
 
 body {
-    background-color: #cb7b7b;
+    background-color: #ffffff;
+    
 }
 
 /* Header */
@@ -37,10 +40,41 @@ header .menu ul li a {
     
 }
 
+.finestra {
+    position: relative;  /* Imposta il contenitore come riferimento per gli altri elementi */
+    width: 100%;
+    height: calc(100vh + 10px);       /* Imposta l'altezza del contenitore uguale all'altezza della finestra */
+}
+
+/* Text and Images */
+.testo2 {
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.testo {
+    margin-top: 80px;
+    margin-left: 10px;          /* Spazio tra le voci del menu */
+    
+        position: absolute;  /* Posiziona il testo in modo assoluto dentro il contenitore */
+        top: 20px;           /* Distanza dal bordo superiore */
+        left: 20px;          /* Distanza dal bordo sinistro */
+        color: rgb(0, 0, 0);        /* Colore del testo */
+        font-family: "font watever";
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .scr {
+        z-index: -1;         /* Impedisce che il video copra la scritta sopra */
+        width: 50%;          /* Rimpicciolisce l'elemento (imposta la larghezza al 50%) */
+        height: auto;   }
+
 /* Video Container */
 .video-container {
     height: 100vh;
 }
+
 
 .video-background {
     object-fit: cover;
@@ -52,40 +86,110 @@ header .menu ul li a {
     line-height: 1.2;
 }
 
-/* Text and Images */
-.testo, .testo2 {
-    font-size: 28px;
-    line-height: 1.2;
-}
 
-#lattine {
-    width: 70%;
-}
 
 .scr {
     width: 100%;
 }
 
-.semplice, .semplicet, .semplice2 {
-    font-size: 16px;
-    line-height: 1.5;
-}
 
 /* Containers */
-.contenitore, .contenitore2, .contenitore3, .contenitore4 {
+.contenitore3 {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 0px;        
+}
+
+.contenitore4 {
     flex-direction: column;
     gap: 10px;
     padding: 20px;
     top: 60%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);        
 }
 
-.container {
-    flex-direction: column;
-    max-width: 90%;
-    gap: 20px;
+
+.contenitore2{
+   
+    gap: 10px;
+    padding: 20px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "font watever";
+        font-size: 28px;
 }
+
+.contenitore{
+
+    display: flex;                 /* Dispone gli elementi in una riga */
+    justify-content: center;       /* Centra il contenitore orizzontalmente */
+    align-items: center;           /* Centra verticalmente gli elementi */
+    gap: 20px;                     /* Spazio tra gli elementi */
+    margin-top: 50px;               /* Distanza dal bordo superiore della pagina */
+    
+    position: absolute;  /* Posiziona la scritta sopra il video */
+    top: 40%;            /* Posiziona la scritta al centro verticalmente */
+    left: 50%;           /* Posiziona la scritta al centro orizzontalmente */
+    transform: translate(-50%, -50%); /* Centra esattamente la scritta */
+    text-align: center;  /* Allinea il testo al centro */
+    color: white;        /* Colore del testo */
+    font-family: "font watever";
+    font-size: 70px;
+    line-height: 100%; /* 88px */
+
+    gap: 10px;
+    padding: 20px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+font-family: "font watever";
+        font-size: 28px;
+        width: 100%;
+
+       
+
+        
+    }
+
+    .contenitore {
+        gap: 7px;                     /* Spazio tra gli elementi */
+        margin-top: 20px;               /* Distanza dal bordo superiore della pagina */
+    
+        position: absolute;  /* Posiziona la scritta sopra il video */
+        top: 40%;            /* Posiziona la scritta al centro verticalmente */
+        left: 50%;           /* Posiziona la scritta al centro orizzontalmente */
+        transform: translate(-50%, -50%); /* Centra esattamente la scritta */
+        text-align: center;  /* Allinea il testo al centro */
+        color: white;        /* Colore del testo */
+        font-family: "font watever";
+        font-size: 28px;
+        line-height: 100%; /* 88px */
+        padding: 2%;
+        
+    }
+    
+    .contenitore2 {
+        gap: 7px;                     /* Spazio tra gli elementi */
+        margin-top: 20px;               /* Distanza dal bordo superiore della pagina */
+    
+        position: absolute;  /* Posiziona la scritta sopra il video */
+        top: 46%;            /* Posiziona la scritta al centro verticalmente */
+        left: 50%;           /* Posiziona la scritta al centro orizzontalmente */
+        transform: translate(-50%, -50%); /* Centra esattamente la scritta */
+        color: white;        /* Colore del testo */
+        font-family: "font watever";
+        font-size: 28px;
+        line-height: 100%; /* 88px */
+        padding: 2%;
+
+    }
+
 
 .image-block img {
     width: 100%;
@@ -117,26 +221,150 @@ header .menu ul li a {
 /* Specific Elements */
 .foto-background, .foto-background2 {
     width: 100%;
+    height: 100vh;
+}
+
+
+
+.icon {
+    width: 50%; /* Dimensione desiderata */
     height: auto;
+  }
+
+  .icon2 {
+    width: 65%; /* Dimensione desiderata */
+    height: auto;
+  }
+
+  .icon3 {
+    width: 30%; /* Dimensione desiderata */
+    height: auto;
+  }
+
+  .semplice1{ 
+    color: #1E1E1E;
+
+    /* H2 Neue Haas [Website] */
+    font-family: "font bold";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 133.333% */
+    margin-top: 240px;
+} 
+
+
+#lattine {
+    position: absolute;  /* Posiziona l'immagine in modo assoluto all'interno del contenitore */
+    z-index: -1;         /* Impedisce che l'immagine copra la scritta sopra */
+    top: 40%;            /* Posiziona verticalmente al centro */
+    left: 50%;           /* Posiziona orizzontalmente al centro */
+    transform: translate(-50%, -50%); /* Centra esattamente l'immagine sia verticalmente che orizzontalmente */
+    
+    width: 70%;          /* Rimpicciolisce l'immagine (imposta la larghezza al 70%) */
+    height: auto;        /* Mantiene le proporzioni */
+}
+
+
+.semplice, .semplice2 {
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+.semplicet {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.semplicet2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-left: 10px;
+}
+
+.container {
+    display: block; /* Rimuove il layout flex */
+    max-width: 100%; /* Permette al contenitore di adattarsi alla pagina */
+    padding: 80px 20px; /* Margine interno per il contenitore */
+    margin: 0 auto; /* Centra il contenitore orizzontalmente */
+}
+
+.text-block {
+    justify-content: left;
+    display: block; /* Assicura che ogni elemento sia su una nuova riga */
+    width: 100%;
+
+  }
+
+.image-block1{
+    
+    justify-content: center;
+    position: absolute;  /* Posiziona l'immagine in modo assoluto all'interno del contenitore */
+z-index: -1;         /* Impedisce che l'immagine copra la scritta sopra */
+top: 44%;            /* Posiziona verticalmente al centro */
+left: 50%;           /* Posiziona orizzontalmente al centro */
+transform: translate(-50%, -50%); /* Centra esattamente l'immagine sia verticalmente che orizzontalmente */
+
+width: 80%;          /* Rimpicciolisce l'immagine (imposta la larghezza al 70%) */
+height: 35%;        /* Mantiene le proporzioni */
 }
 
 .testotc {
-    gap: 0px;                     /* Spazio tra gli elementi */
+    margin-top: 80px;
+    margin-left: 10px;          /* Spazio tra le voci del menu */
+    
+        position: absolute;  /* Posiziona il testo in modo assoluto dentro il contenitore */
+        top: 20px;           /* Distanza dal bordo superiore */
+        left: 20px;          /* Distanza dal bordo sinistro */
+        color: rgb(0, 0, 0);        /* Colore del testo */
+        font-family: "font watever";
+        font-size: 28px;
+        line-height: 1.2;
+    }
 
-margin-top: 80px;
-position: absolute;  /* Posiziona il testo in modo assoluto dentro il contenitore */
-top: 20px;           /* Distanza dal bordo superiore */
-color: rgb(0, 0, 0);        /* Colore del testo */
-font-family: "font watever";
-font-size: 16px;
-line-height: 130%; /* 88px */
-display: flex;                 /* Dispone gli elementi in una riga */
-flex-direction: column; /* Fa sì che i figli principali siano impilati */
+
+.inline-text {
+display: flex; /* Mantiene "Get" e "the" sulla stessa riga */
+gap: 5px; /* (Opzionale) Aggiunge spazio tra i paragrafi */
 }
 
-.wateverpiccolo {
-    width: 50%;
-    height: auto;
+.testotc {
+    margin-top: 80px;
+    margin-left: 10px;          /* Spazio tra le voci del menu */
+    
+        position: absolute;  /* Posiziona il testo in modo assoluto dentro il contenitore */
+        top: 20px;           /* Distanza dal bordo superiore */
+        left: 20px;          /* Distanza dal bordo sinistro */
+        color: rgb(0, 0, 0);        /* Colore del testo */
+        font-family: "font watever";
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+.testocentro{
+    font-family: "font watever";
+        font-size: 28px;
 }
+
+
+.gallery-item {
+    width: 150px; /* Dimensione quadrata */
+    height: 150px; /* Dimensione quadrata */
+    border-radius: 20px; /* Bordo arrotondato */
+    overflow: hidden; /* Nasconde i contenuti oltre i bordi */
+  
+  }
+  
+  .gallery-item img {
+    width: 100%; /* L'immagine riempie il contenitore */
+    height: auto; /* Mantiene le proporzioni */
+    display: block; /* Elimina gli spazi indesiderati */
+  }
+
+
 
 }

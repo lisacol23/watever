@@ -26,4 +26,3 @@ function toggleText(id) {
     text.previousElementSibling.querySelector(".toggle-button").textContent = "-"; // Cambia il simbolo
   }
 }
-
