@@ -217,6 +217,18 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
   justify-content: space-between;
 } 
 
+.semplicet21{ 
+  color: #1E1E1E;
+
+  /* H2 Neue Haas [Website] */
+  font-family: "font normal";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px; /* 133.333% */
+  display: flex; 
+  justify-content: space-between;
+} 
+
 .foto-background {
     position: absolute;  /* Posiziona il video in modo assoluto all'interno del contenitore */
     top: 0;

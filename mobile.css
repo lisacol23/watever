@@ -315,6 +315,15 @@ font-family: "font watever";
     max-width: 300px;
 }
 
+.semplicet21 {
+    margin-top: 150px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-left: 10px;
+    max-width: 300px;
+}
+
 .container {
     display: block; /* Rimuove il layout flex */
     max-width: 100%; /* Permette al contenitore di adattarsi alla pagina */
