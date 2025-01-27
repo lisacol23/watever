@@ -1,32 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Espandi Testo</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Collega il file CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Web Responsiva</title>
+    <link rel="stylesheet" href="pc.css">
+    <link rel="stylesheet" href="mobile.css">
 </head>
 <body>
-  <div>
-    <p>
-      <strong>See your fluoride intake and mental capability</strong>
-      <button class="toggle-button" onclick="toggleText('text1')">+</button>
-    </p>
-    <div id="text1" class="hidden-text">
-      This is additional text that provides more details about fluoride intake and mental capability.
-    </div>
-  </div>
 
-  <div>
-    <p>
-      <strong>Get personalised coaching on your happy journey</strong>
-      <button class="toggle-button" onclick="toggleText('text2')">+</button>
-    </p>
-    <div id="text2" class="hidden-text">
-      This text explains how you can get personalised coaching tailored to your specific needs and goals.
-    </div>
-  </div>
+    <script src="script1.js"></script> <!-- Collega il file JavaScript -->
+    <script src="script2.js"></script> <!-- Collega il file JavaScript -->
 
-  <script src="script.js"></script> <!-- Collega il file JavaScript -->
+
+    <header>
+        <div class="logo">
+            <img src="logo.svg" alt="Logo" />
+        </div>
+
+        <div class="hamburger"  id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="thecase.html"><img src="the.svg" alt="Home"></a></li>
+                <li><a href="about.html"><img src="about.svg" alt="Home"></a></li>
+
+                <li><a href="getwatever.html"><img src="get.svg" alt="Home"></a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <script>
+        // JavaScript per attivare/disattivare il menu
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+    
+        hamburger.addEventListener('click', () => {
+          menu.classList.toggle('active'); // Aggiunge/rimuove la classe active
+        });
+      </script>
+
+<br><br>
+
+
+    <div class="video-container">
+        <!-- Video -->
+        <video class="video-background" autoplay loop muted>
+            <source src="1.mp4" type="video/mp4">
+            Il tuo browser non supporta il tag video.
+        </video>
+    
+        <!-- Scritta sopra il video -->
+        <div class="overlay-text">
+            <p>Don’t stress just...</p>
+            <img class="icon2" src="trade.svg">
+        </div>
+    </div>
+
+
+
+
+    <div class="finestra">
+
+       
+
+    <img id="lattine" src="lattine.png" >
+    <div class="testo">
+        Just be happy,
+        <br>
+        <img  class="icon2" src="scritta.svg">
+        <br><br>
+        <p class="semplice1">
+            Launch Promotion
+        </p>
+        <p class="semplicet">
+            the case® + watever® subscription
+        </p>
+ 
+        <p class="semplicet">
+        Be the first to try our new product and start <br>
+        living your watever way with the watever <br>
+        life-time  subscription
+        </p>
+
+
+<a href="thecase.html" class="svg-hover">
+  <img class="icon" src="let'sdothis.svg" alt="Icona">
+</a>
+
+    </div>
+
+    </div>
+
+
+    
+    <div class="finestra">
+        <img class="foto-background" src="foto1.jpeg" alt="foto">
+        <div class="overlay-text">
+            <img class="icon2" src="trade.svg">
+            <p>Say welcome 
+                to the most fluoridated water</p>
+
+        </div>
+    </div>
+
+
+    <div class="finestra">
+
+        <div class="container">
+            
+          
+            <!-- Blocco testo -->
+            <div class="text-block">
+                
+                   
+                <div class="testotc">
+                    <div class="inline-text">
+                    <p>Get </p>
+                    <p>the </p>
+                    <img  class="icon3" src="watever®b.svg">
+                    </div>
+                <p>lifestyle</p>
+                </div>
+                <br> <br><br> <br><br> <br><br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+                <p class="semplicet2">
+                    It takes only 8 cans of watever per day to maintain an optimal happiness level.
+                    </p> 
+                    <br class="mobile-hide"> <br class="mobile-hide"> 
+                    <p class="semplicet2">
+                        Get our subscription to receive in your own front yard your watever stock, each month, hassle-free.
+                    </p> 
+                    <br> <br class="mobile-hide"> 
+                    <a href="thecase.html" class="svg-hover">
+                        <img class="icon" src="join.svg" alt="Home"></a>
+
+            </div>
+            
+    
+            <!-- Blocco immagine -->
+            <div class="image-block1">
+                <img src="h2.svg" alt="Persone felici">
+              </div>
+    
+          </div>
+    
+    </div>
+
+    <div class="video-container">
+        <!-- Video -->
+        <video class="video-background" autoplay loop muted>
+            <source src="thecase.mp4" type="video/mp4">
+            Il tuo browser non supporta il tag video.
+        </video>
+    
+        <!-- Scritta sopra il video -->
+        <div class="contenitore">
+            <p> Experience </p>     
+            <img class="icon3" src="trade.svg">
+            <p>at</p>
+            <p>360</p>
+        </div>
+       
+        <div class="contenitore2">
+            <img class="icon2" src="the case®.svg">
+            <p>is</p>
+            <p>here</p>
+        </div>
+         
+        <div class="contenitore3">
+            <a href="thecase.html" class="svg-hover2"><img src="iwant.svg"></a>
+        </div>
+       
+    </div>
+
+    
+
+    <div class="finestrag">
+
+        <div class="testo">
+
+            <p>This is what life</p>
+            
+            <div class="testotc">
+
+             <div class="inline-text">
+            <p>with </p>
+            <img src="watever®b.svg" class="wateverpiccolo">
+            <p>looks </p>
+            <p>like</p>
+             </div>
+
+            </div>
+
+            <br> 
+            <p class="semplice">Start today living your #lifewithwatever</p>
+
+    
+        </div>
+        
+
+
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <div class="svg-hoverh1" >
+              <img  src="h31.svg" alt="Image 1" />
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="svg-hoverh2" >
+              <img src="h32.svg" alt="Image 2" />
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="svg-hoverh3" >
+              <img src="h33.svg" alt="Image 3" />
+                </div>
+            </div>
+       
+    </div>
+    </div>
+
+    <div class="finestrap">
+
+    </div>
+
+<footer>
+    <img  src="Footer.svg" alt="Image 2" />
+</footer>
+
 </body>
 </html>
