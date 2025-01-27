@@ -447,6 +447,7 @@ margin-left: 100px;          /* Spazio tra le voci del menu */
     font-weight: bold;
     margin-bottom: 200px;
     justify-content: center;
+    line-height: 1.0; /* Distanza 1.5 volte l'altezza del font */
 
   }
   
@@ -687,14 +688,18 @@ footer img {
   margin-left: 10px;
 }
 
-/* Testo nascosto inizialmente */
 .hidden-text {
-  display: none; /* Nascosto di default */
-  margin-top: 10px;
-  font-size: 16px;
-  color: #555;
-font-family: "font normal";
-  
+  opacity: 0; /* Nascosto di default */
+  max-height: 0; /* Collassato inizialmente */
+  overflow: hidden;
+  margin-top: 0;
+  transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+}
+
+.hidden-text.visible {
+  opacity: 1; /* Testo visibile */
+  max-height: 200px; /* Espandi l'altezza. Regola secondo il contenuto massimo */
+  margin-top: 10px; /* Aggiungi margine quando visibile */
 }
 
 /* Testo visibile */
@@ -704,7 +709,7 @@ font-family: "font normal";
 }
   
 .wateverpiccolo {
-  width: 50%;
+  width: 60%;
   
 }
 
@@ -712,7 +717,7 @@ font-family: "font normal";
   display: flex;
   justify-content: center; /* Centra orizzontalmente */
   align-items: center; /* Centra verticalmente */
-  height: 100vh; /* L'altezza del contenitore riempie l'intera schermata */
+  height: calc(100vh - 200px);
   width: 100%; /* La larghezza occupa tutto lo schermo */
   overflow: hidden; /* Nasconde parti dell'immagine fuori dal contenitore, se necessario */
 }
@@ -723,7 +728,9 @@ font-family: "font normal";
   object-fit: contain; /* Mantiene il rapporto d'aspetto dell'immagine */
 }
 
-
+.menomargine{
+  transform: translateY(-15px); /* Sposta l'immagine verso l'alto di 20px */
+}
 
 
 

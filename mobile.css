@@ -466,6 +466,14 @@ margin-left: 10px;          /* Spazio tra le voci del menu */
     
 }
 
+.menomargine{
+    transform: translateY(-7px); /* Sposta l'immagine verso l'alto di 20px */
+  }
+
+  .wateverpiccolo {
+    width: 50%;
+    
+  }
 
 
 }
