@@ -447,16 +447,24 @@ margin-left: 10px;          /* Spazio tra le voci del menu */
     display: flex;
     justify-content: center; /* Centra orizzontalmente */
     align-items: center; /* Centra verticalmente */
-    height: 100vh; /* L'altezza del contenitore riempie l'intera schermata */
+    height: calc(100vh - 700px);
     width: 100%; /* La larghezza occupa tutto lo schermo */
     overflow: hidden; /* Nasconde parti dell'immagine fuori dal contenitore, se necessario */
   }
   
   .image-container img {
-    max-width: 100%; /* L'immagine si adatta alla larghezza del contenitore */
+    max-width: 90%; /* L'immagine si adatta alla larghezza del contenitore */
     max-height: 100%; /* L'immagine si adatta all'altezza del contenitore */
     object-fit: contain; /* Mantiene il rapporto d'aspetto dell'immagine */
   }
+
+  .finestrag {
+    position: relative;  /* Imposta il contenitore come riferimento per gli altri elementi */
+    width: 100%;
+    background-color: #E3FF51;
+    height: calc(100vh - 200px); 
+    
+}
 
 
 
