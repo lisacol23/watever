@@ -316,12 +316,15 @@ font-family: "font watever";
 }
 
 .semplicet21 {
-    margin-top: 150px;
+    margin-top: 120px;
     margin-bottom: 5px;
     font-size: 16px;
     line-height: 1.2;
     margin-left: 10px;
-    max-width: 300px;
+    max-width: 500px;
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-right: 50px;
 }
 
 .container {
