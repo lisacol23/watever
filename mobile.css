@@ -373,40 +373,53 @@ display: flex; /* Mantiene "Get" e "the" sulla stessa riga */
 gap: 5px; /* (Opzionale) Aggiunge spazio tra i paragrafi */
 }
 
-.testotc {
-    margin-top: 80px;
-    margin-left: 10px;          /* Spazio tra le voci del menu */
+.testotc1 {
+    margin-top: 8px;
+    margin-left: 0px;          /* Spazio tra le voci del menu */
     
         position: absolute;  /* Posiziona il testo in modo assoluto dentro il contenitore */
         top: 20px;           /* Distanza dal bordo superiore */
-        left: 20px;          /* Distanza dal bordo sinistro */
+        left: 0px;          /* Distanza dal bordo sinistro */
         color: rgb(0, 0, 0);        /* Colore del testo */
         font-family: "font watever";
         font-size: 28px;
         line-height: 1.2;
+        max-width: 240px;
     }
 
 .testocentro{
     font-family: "font watever";
-        font-size: 28px;
+        font-size: 28px; 
 }
 
-
-.gallery-item {
-    width: 150px; /* Dimensione quadrata */
-    height: 150px; /* Dimensione quadrata */
-    border-radius: 20px; /* Bordo arrotondato */
-    overflow: hidden; /* Nasconde i contenuti oltre i bordi */
+.gallery {
+    overflow: hidden; /* Nasconde le immagini fuori dalla vista */
+    width: 100vw; /* La galleria occupa tutta la larghezza dello schermo */
+    height: 450px; /* Altezza della galleria */
+    position: relative; /* Posizionamento per layout */
+  }
   
+  .gallery-inner {
+    display: flex; /* Dispone le immagini in orizzontale */
+    transition: transform 0.5s ease-in-out; /* Aggiunge una transizione fluida */
+  }
+  
+  .gallery-item {
+    min-width: 100vw; /* Ogni immagine occupa l'intera larghezza dello schermo */
+    flex-shrink: 0; /* Impedisce che si ridimensionino */
+    display: flex;
+    justify-content: center; /* Centra il contenuto orizzontalmente */
+    align-items: center; /* Centra il contenuto verticalmente */
   }
   
   .gallery-item img {
-    width: 100%; /* L'immagine riempie il contenitore */
-    height: auto; /* Mantiene le proporzioni */
-    display: block; /* Elimina gli spazi indesiderati */
-  }
-
-
+    width: auto; /* Lascia che l'immagine mantenga la proporzione */
+    height: 100%; /* Altezza della galleria */
+    display: block;
+    border-radius: 20px; /* Arrotonda i bordi */
+    width: 350px; /* Larghezza quadrata */
+    height: 350px; /* Altezza quadrata */
+}
   
 /*the case */
 .sthecase {

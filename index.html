@@ -187,7 +187,7 @@ Video -->
 
             <p>This is what life</p>
             
-            <div class="testotc">
+            <div class="testotc1">
 
              <div class="inline-text">
             <p>with </p>
@@ -205,31 +205,85 @@ Video -->
         </div>
         
 
-
-        
         <div class="gallery">
-            <div class="gallery-item">
-                <div class="svg-hoverh1" >
-              <img  src="h31.svg" alt="Image 1" />
-                </div>
+            <div class="gallery-inner">
+              <div class="gallery-item">
+                <img src="h31.svg" alt="Image 1">
+              </div>
+              <div class="gallery-item">
+                <img src="h32.svg" alt="Image 2">
+              </div>
+              <div class="gallery-item">
+                <img src="h33.svg" alt="Image 3">
+              </div>
             </div>
-            <div class="gallery-item">
-                <div class="svg-hoverh2" >
-              <img src="h32.svg" alt="Image 2" />
-                </div>
-            </div>
-            <div class="gallery-item">
-                <div class="svg-hoverh3" >
-              <img src="h33.svg" alt="Image 3" />
-                </div>
-            </div>
-       
-    </div>
+            
+          </div>
     </div>
 
     <div class="finestrap">
 
     </div>
+    <script>
+       const galleryInner = document.querySelector(".gallery-inner");
+const galleryItems = document.querySelectorAll(".gallery-item");
+
+let currentIndex = 0;
+let startX = 0; // Punto iniziale del tocco
+let moveX = 0; // Movimento orizzontale
+
+function updateSlidePosition() {
+  galleryInner.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+// Inizia il tocco
+galleryInner.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX; // Registra la posizione iniziale
+});
+
+// Durante il tocco (opzionale, per effetto visivo)
+galleryInner.addEventListener("touchmove", (e) => {
+  moveX = e.touches[0].clientX - startX;
+  galleryInner.style.transform = `translateX(calc(-${currentIndex * 100}% + ${moveX}px))`;
+});
+
+// Fine del tocco
+galleryInner.addEventListener("touchend", () => {
+  if (moveX > 50) {
+    // Swipe a destra: immagine precedente
+    currentIndex = Math.max(currentIndex - 1, 0);
+  } else if (moveX < -50) {
+    // Swipe a sinistra: immagine successiva
+    currentIndex = Math.min(currentIndex + 1, galleryItems.length - 1);
+  }
+  updateSlidePosition(); // Riposiziona correttamente
+  moveX = 0; // Resetta il movimento
+});
+
+// Aggiungere supporto mouse (facoltativo)
+galleryInner.addEventListener("mousedown", (e) => {
+  startX = e.clientX; // Registra la posizione iniziale
+  galleryInner.addEventListener("mousemove", handleMouseMove);
+});
+
+galleryInner.addEventListener("mouseup", () => {
+  galleryInner.removeEventListener("mousemove", handleMouseMove);
+  if (moveX > 50) {
+    currentIndex = Math.max(currentIndex - 1, 0);
+  } else if (moveX < -50) {
+    currentIndex = Math.min(currentIndex + 1, galleryItems.length - 1);
+  }
+  updateSlidePosition();
+  moveX = 0;
+});
+
+function handleMouseMove(e) {
+  moveX = e.clientX - startX;
+  galleryInner.style.transform = `translateX(calc(-${currentIndex * 100}% + ${moveX}px))`;
+}
+
+
+      </script>
 
 <footer>
     <img  src="Footer.svg" alt="Image 2" />

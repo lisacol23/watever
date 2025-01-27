@@ -528,6 +528,23 @@ margin-left: 100px;          /* Spazio tra le voci del menu */
     display: flex;                 /* Dispone gli elementi in una riga */
     flex-direction: column; /* Fa sì che i figli principali siano impilati */
 }
+
+
+.testotc1 {
+  gap: 0px;                     /* Spazio tra gli elementi */
+
+margin-top: 57px;
+position: absolute;  /* Posiziona il testo in modo assoluto dentro il contenitore */
+top: 20px;           /* Distanza dal bordo superiore */
+color: rgb(0, 0, 0);        /* Colore del testo */
+font-family: "font watever";
+font-size: 75px;
+line-height: 130%; /* 88px */
+display: flex;                 /* Dispone gli elementi in una riga */
+flex-direction: column; /* Fa sì che i figli principali siano impilati */
+}
+
+
 .inline-text {
     display: flex; /* Mantiene "Get" e "the" sulla stessa riga */
     gap: 20px; /* (Opzionale) Aggiunge spazio tra i paragrafi */
