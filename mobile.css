@@ -310,6 +310,7 @@ font-family: "font watever";
     font-size: 16px;
     line-height: 1.2;
     margin-left: 10px;
+    max-width: 325px;
 }
 
 .container {
