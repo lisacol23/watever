@@ -500,6 +500,11 @@ margin-left: 100px;          /* Spazio tra le voci del menu */
     transform: translateY(150px); /* Sposta l'immagine verso l'alto di 20px */
   }
   
+  .gallery-inner {
+    display: flex; /* Dispone le immagini in orizzontale */
+    gap: 68px;
+  }
+
   /* Stili per ogni immagine */
   .gallery-item {
     width: 381px; /* Dimensione quadrata */
@@ -702,6 +707,25 @@ font-family: "font normal";
   width: 50%;
   
 }
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Centra orizzontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* L'altezza del contenitore riempie l'intera schermata */
+  width: 100%; /* La larghezza occupa tutto lo schermo */
+  overflow: hidden; /* Nasconde parti dell'immagine fuori dal contenitore, se necessario */
+}
+
+.image-container img {
+  max-width: 100%; /* L'immagine si adatta alla larghezza del contenitore */
+  max-height: 100%; /* L'immagine si adatta all'altezza del contenitore */
+  object-fit: contain; /* Mantiene il rapporto d'aspetto dell'immagine */
+}
+
+
+
+
 
 /*
 * {

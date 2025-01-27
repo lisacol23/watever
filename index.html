@@ -208,14 +208,19 @@ Video -->
         <div class="gallery">
             <div class="gallery-inner">
               <div class="gallery-item">
+                <div class="svg-hoverh1" >
                 <img src="h31.svg" alt="Image 1">
+            </div>
               </div>
               <div class="gallery-item">
+                <div class="svg-hoverh2" >
                 <img src="h32.svg" alt="Image 2">
-              </div>
+              </div> </div>
+
+              <div class="svg-hoverh3" > 
               <div class="gallery-item">
                 <img src="h33.svg" alt="Image 3">
-              </div>
+              </div> </div>
             </div>
             
           </div>
@@ -281,9 +286,12 @@ function handleMouseMove(e) {
   moveX = e.clientX - startX;
   galleryInner.style.transform = `translateX(calc(-${currentIndex * 100}% + ${moveX}px))`;
 }
-
-
       </script>
+
+<div class="image-container">
+    <img src="partner1.svg" alt="Responsive Image" />
+  </div>
+
 
 <footer>
     <img  src="Footer.svg" alt="Image 2" />
