@@ -768,13 +768,61 @@ footer img {
     justify-content: space-between; /* Spazia gli elementi tra loro */
     align-items: center; /* Allinea gli elementi verticalmente al centro */
     width: 100%; /* Assicura che il contenitore occupi tutta la larghezza */
+    font-family: "font normal";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px; /* 133.333% */
 }
 
 
+.sinistra {
+  text-align: left; /* Testo allineato a sinistra */
+}
+
+.destra {
+  text-align: right; /* Testo allineato a destra */
+}
+
+.grigio{
+  text-align: right; /* Testo allineato a sinistra */
+  color: #717171;
+}
 
 
+.carrello2 {
+  display: flex; /* Imposta il contenitore come flexbox */
+    justify-content: space-between; /* Spazia gli elementi tra loro */
+    align-items: center; /* Allinea gli elementi verticalmente al centro */
+    width: 100%; /* Assicura che il contenitore occupi tutta la larghezza */
+    font-family: "font normal";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px; /* 133.333% */}
 
+.sinistra2 {
+  order: 0; /* Posiziona l'elemento a sinistra */
+}
 
+.destra2 {
+  order: 1; /* Mantiene l'elemento principale a destra */
+  margin-left: auto; /* Spinge tutto a sinistra e lascia spazio a destra */
+  color: #bbbbbb;
+  text-decoration: line-through; /* Aggiunge una linea sopra il testo */
+  text-decoration-thickness: 1px; /* Imposta lo spessore della linea */
+}
+
+.centro {
+  order: 2; /* Posiziona il centro accanto a destra */
+  margin-left: 10px; /* Distanza tra il centro e la destra */
+  
+}
+
+.linea-sottile {
+  border: none; /* Rimuove lo stile predefinito */
+  border-top: 1.5px solid #000000; /* Linea sottile */
+  margin: 20px 0; /* Spazio sopra e sotto la linea */
+  width: 100%; /* Larghezza completa */
+}
 
 
 
