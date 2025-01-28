@@ -732,7 +732,53 @@ footer img {
   transform: translateY(-15px); /* Sposta l'immagine verso l'alto di 20px */
 }
 
+.ridimensiona{
+  font-family: "font watever";
+  font-size: 75px;
+  line-height: 130%; /* 88px */
+}
 
+.icon3 {
+  width: 100%; /* Dimensione desiderata */
+  height: auto;
+}
+
+/* Media query per grandezze intermedie (tablet o laptop piccoli) */
+@media screen and (min-width: 768px) and (max-width: 1500px) {
+  .ridimensiona {
+      font-size: 4.5vw; /* Ridotto per schermi intermedi */
+  }
+
+  .icon3{
+    width: 50%; /* Dimensione desiderata */
+  height: auto;
+  }
+
+  .semplicet21, .semplicet2 {
+      font-size: 1.8vw; /* Testo leggermente più piccolo */
+  }
+
+  .gallery-inner {
+    gap: 30px;
+  }
+
+
+  .carrello {
+    display: flex; /* Imposta il contenitore come flexbox */
+    justify-content: space-between; /* Spazia gli elementi tra loro */
+    align-items: center; /* Allinea gli elementi verticalmente al centro */
+    width: 100%; /* Assicura che il contenitore occupi tutta la larghezza */
+}
+
+
+
+
+
+
+
+
+
+}
 
 /*
 * {
