@@ -74,16 +74,32 @@
         </div>
 
         <!-- Blocco immagine -->
-        <div class="image-block">
-            <img src="getw.png" alt="Persone felici">
-          </div>
+      
+            <div class="carrellata">
+                <div class="grande">
+                    <img id="img-grande" src="thecase1.jpg" alt="Immagine Grande">
+                </div>
+                <div class="piccole">
+                    <img src="thecase1.jpg" alt="Immagine Piccola" class="piccola" onclick="cambiaImmagine('thecase1.jpg')">
+                    <img src="af1.jpeg" alt="Immagine Piccola" class="piccola" onclick="cambiaImmagine('af1.jpeg')">
+                    <img src="af2.png" alt="Immagine Piccola" class="piccola" onclick="cambiaImmagine('af2.png')">
+                    <img src="af3.svg" alt="Immagine Piccola" class="piccola" onclick="cambiaImmagine('af3.svg')">
+                    <img src="af4g.png" alt="Immagine Piccola" class="piccola" onclick="cambiaImmagine('af4g.png')">
+                </div>
+            </div>
+        
 
       </div>
 
 </div>
 
 
-
+<script>
+function cambiaImmagine(imma) {
+    const imgGrande = document.getElementById("img-grande");
+    imgGrande.src = imma; // Cambia la src dell'immagine grande con quella della piccola cliccata
+}
+</script>
 
 
 
