@@ -852,7 +852,7 @@ footer img {
   justify-content: center;
   gap: 10px;
   margin-top: 20px; /* Aggiunge spazio tra l'immagine grande e quelle piccole */
-
+  justify-content: space-between; /* Le immagini piccole si distribuiscono in modo uniforme */
 }
 
 .piccole img {
