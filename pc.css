@@ -398,6 +398,8 @@ margin-left: 100px;          /* Spazio tra le voci del menu */
   }
   
 
+
+
   /* Blocco immagine */
   .image-block {
     z-index: -1;         /* Impedisce che il video copra la scritta sopra */
@@ -440,6 +442,15 @@ margin-left: 100px;          /* Spazio tra le voci del menu */
 
   }
   
+  .text-blockc {
+    flex: 1; /* Occupa metà dello spazio disponibile */
+    justify-content: center;
+    display: block; /* Assicura che ogni elemento sia su una nuova riga */
+    width: 100%;
+
+
+  }
+
   .text-block h1 {
     z-index: -1;         /* Impedisce che il video copra la scritta sopra */
     font-family: "font bold";
@@ -533,6 +544,26 @@ margin-left: 100px;          /* Spazio tra le voci del menu */
     line-height: 130%; /* 88px */
     display: flex;                 /* Dispone gli elementi in una riga */
     flex-direction: column; /* Fa sì che i figli principali siano impilati */
+}
+
+.testotcalto {
+  gap: 0px;                     /* Spazio tra gli elementi */
+
+margin-top: 80px;
+position: absolute;  /* Posiziona il testo in modo assoluto dentro il contenitore */
+top: 20px;           /* Distanza dal bordo superiore */
+color: rgb(0, 0, 0);        /* Colore del testo */
+font-family: "font watever";
+font-size: 75px;
+line-height: 130%; /* 88px */
+display: flex;                 /* Dispone gli elementi in una riga */
+flex-direction: column; /* Fa sì che i figli principali siano impilati */
+text-align: left; 
+}
+
+.testobasso{
+  color: rgb(0, 0, 0);        /* Colore del testo */
+
 }
 
 
@@ -710,6 +741,11 @@ footer img {
   
 .wateverpiccolo {
   width: 60%;
+  
+}
+
+.wateverpiccolo2 {
+  width: 50%;
   
 }
 
