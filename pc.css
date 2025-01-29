@@ -300,8 +300,8 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
 }
 
 .testo2 {
-    z-index: -1;         /* Impedisce che il video copra la scritta sopra */
-margin-top: 12ss0px;
+
+  margin-top: 12ss0px;
 margin-left: 100px;          /* Spazio tra le voci del menu */
 
     position: absolute;  /* Posiziona il testo in modo assoluto dentro il contenitore */
@@ -395,6 +395,7 @@ margin-left: 100px;          /* Spazio tra le voci del menu */
   left: 50%; /* Posiziona il contenitore a metà orizzontale */
   transform: translate(-50%, -50%); /* Centra il contenitore esattamente */
   margin: 0 auto; /* Centra orizzontalmente */
+  max-height: 750px;
   }
   
 
@@ -549,7 +550,7 @@ margin-left: 100px;          /* Spazio tra le voci del menu */
 .testotcalto {
   gap: 0px;                     /* Spazio tra gli elementi */
 
-margin-top: 80px;
+margin-top: 50px;
 position: absolute;  /* Posiziona il testo in modo assoluto dentro il contenitore */
 top: 20px;           /* Distanza dal bordo superiore */
 color: rgb(0, 0, 0);        /* Colore del testo */
@@ -749,6 +750,11 @@ footer img {
   
 }
 
+.wateverpiccolo3 {
+  width: 35%;
+  
+}
+
 .image-container {
   display: flex;
   justify-content: center; /* Centra orizzontalmente */
@@ -779,6 +785,16 @@ footer img {
   height: auto;
 }
 
+.iconwt {
+  width: 90%; /* Dimensione desiderata */
+  height: auto;
+}
+
+.icontcp {
+  width: 60%; /* Dimensione desiderata */
+  height: auto;
+}
+
 /* Media query per grandezze intermedie (tablet o laptop piccoli) */
 @media screen and (min-width: 768px) and (max-width: 1500px) {
   .ridimensiona {
@@ -799,6 +815,8 @@ footer img {
   }
 
 
+  
+
   .carrello {
     display: flex; /* Imposta il contenitore come flexbox */
     justify-content: space-between; /* Spazia gli elementi tra loro */
@@ -810,7 +828,14 @@ footer img {
   line-height: 32px; /* 133.333% */
 }
 
-
+.grigino {
+  font-family: "font normal";
+  font-size: 14px;
+  font-weight: 500;
+  color: #ababab;
+  text-align: left; /* Testo allineato a sinistra */
+  margin-bottom: 15px;
+}
 .sinistra {
   text-align: left; /* Testo allineato a sinistra */
 }
@@ -874,6 +899,7 @@ footer img {
   width: 100%; /* Adatta la larghezza al contenitore */
   max-width: 800px; /* Imposta una larghezza massima per l'immagine grande */
   height: 500px; /* Imposta un'altezza fissa per l'immagine grande */
+
   overflow: hidden; /* Nasconde qualsiasi parte che esce fuori dal box */
 }
 
@@ -902,6 +928,59 @@ footer img {
 .piccole img:hover {
   transform: scale(1.1); /* Effetto di ingrandimento al passaggio del mouse */
 }
+
+
+
+
+.bottone {
+  width: 100%; /* Larghezza del contenitore */
+  margin: 0 auto; /* Centrare il contenitore orizzontalmente */
+}
+
+.checkout-button {
+  width: 100%; /* Larghezza pari al contenitore */
+  padding: 10px 20px; /* Spaziatura interna del bottone */
+  border: 1px solid black; /* Bordo sottile nero */
+  border-radius: 30px; /* Angoli arrotondati */
+  background-color: white; /* Sfondo bianco */
+  color: black; /* Colore del testo */
+  font-size: 16px; /* Dimensione del testo */
+  cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+  text-align: center; /* Centra il testo */
+  transition: background-color 0.3s ease; /* Effetto di transizione per il hover */
+  font-family: "font normal";
+  font-size: 24px;
+}
+
+/* Stile per l'hover */
+.checkout-button:hover {
+  background-color: #E3FF51; /* Colore di sfondo leggermente diverso al passaggio del mouse */
+}
+
+
+.checkout-buttoni1 {
+  padding: 10px 50px; /* Spaziatura interna del bottone */
+  border: 1px solid black; /* Bordo sottile nero */
+  border-radius: 30px; /* Angoli arrotondati */
+  background-color: white; /* Sfondo bianco */
+  color: black; /* Colore del testo */
+  font-size: 16px; /* Dimensione del testo */
+  cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+  text-align: center; /* Centra il testo */
+  transition: background-color 0.3s ease; /* Effetto di transizione per il hover */
+  font-family: "font normal";
+  font-size: 24px;
+}
+
+/* Stile per l'hover */
+.checkout-buttoni1:hover {
+  background-color: #E3FF51; /* Colore di sfondo leggermente diverso al passaggio del mouse */
+}
+
+
+
+
+
 
 
 }
