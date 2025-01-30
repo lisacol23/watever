@@ -51,6 +51,7 @@ Video -->
 
 
     <div class="video-container">
+      <div class="finestratrasparente">
         <!-- Video -->
         <video class="video-background" autoplay loop muted>
             <source src="1.mp4" type="video/mp4">
@@ -62,6 +63,7 @@ Video -->
             <p>Don’t stress just...</p>
             <img class="icon2" src="trade.svg">
         </div>
+      </div>
     </div>
 
 
@@ -174,6 +176,7 @@ Video -->
     </div>
 
     <div class="video-container">
+      <div class="finestratrasparente">
         <!-- Video -->
         <video class="video-background" autoplay loop muted>
             <source src="thecase.m4v" type="video/mp4">
@@ -200,6 +203,7 @@ Video -->
         </div>        </div>
        
     </div>
+  </div>
 
     
 
@@ -310,6 +314,21 @@ function handleMouseMove(e) {
   galleryInner.style.transform = `translateX(calc(-${currentIndex * 100}% + ${moveX}px))`;
 }
       </script>
+
+<script>
+  function disableButtonOnMobile() {
+    if (window.innerWidth <= 768) { // Controlla se è mobile
+      const link = document.querySelector('.bottone a');
+      link.removeAttribute('href'); // Rimuove il collegamento
+    }
+  }
+
+  // Esegui al caricamento della pagina e al ridimensionamento della finestra
+  window.addEventListener('load', disableButtonOnMobile);
+  window.addEventListener('resize', disableButtonOnMobile);
+</script>
+
+
 
 
 <div class="image-container">

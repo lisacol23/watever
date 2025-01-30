@@ -1,5 +1,10 @@
 @media (max-width: 490px) {
 
+    .bottone a {
+        pointer-events: none;
+        cursor: default;
+      }
+
     .mobile-hide {
         display: none; /* Nasconde i <br> con la classe */
       }
