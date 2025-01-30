@@ -64,7 +64,14 @@ header .menu ul li a {
 
 }
 
+@font-face {
+  font-family: "smile";
+  src: url("");
+}
 
+.smile {
+  color: #000;
+}
 
 @font-face {
     font-family: "font watever";
@@ -191,6 +198,8 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
   font-style: normal;
   font-weight: 500;
   line-height: 32px; /* 133.333% */
+  display: flex; 
+  justify-content: space-between;
 } 
 
 .semplicet{ 
@@ -201,8 +210,7 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
     font-size: 24px;
     font-weight: 500;
     line-height: 32px; /* 133.333% */
-    display: flex; 
-    justify-content: space-between;
+    
 } 
 
 .semplicet2{ 
@@ -298,6 +306,14 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
     height: calc(100vh + 100px); 
     
 }
+.finestrag2 {
+  position: relative;  /* Imposta il contenitore come riferimento per gli altri elementi */
+  width: 100%;
+  background-color: #E3FF51;
+  height: calc(100vh + 100px); 
+  z-index: -1;
+}
+
 
 .testo2 {
 
@@ -384,7 +400,7 @@ margin-left: 100px;          /* Spazio tra le voci del menu */
 /* Contenitore principale */
 .container {
     display: flex;
-  gap: 60px; /* Spazio tra i due blocchi */
+  gap: 65px; /* Spazio tra i due blocchi */
   max-width: auto; /* Larghezza massima del contenitore */
   padding: 100px;
   align-items: center; /* Centra i blocchi interni verticalmente */
@@ -454,12 +470,12 @@ margin-left: 100px;          /* Spazio tra le voci del menu */
 
   .text-block h1 {
     z-index: -1;         /* Impedisce che il video copra la scritta sopra */
-    font-family: "font bold";
+    font-family: "font watever";
     font-size: 70px;
     font-weight: bold;
     margin-bottom: 200px;
     justify-content: center;
-    line-height: 1.0; /* Distanza 1.5 volte l'altezza del font */
+    line-height: 1.1; /* Distanza 1.5 volte l'altezza del font */
 
   }
   
@@ -542,7 +558,7 @@ margin-left: 100px;          /* Spazio tra le voci del menu */
     color: rgb(0, 0, 0);        /* Colore del testo */
     font-family: "font watever";
     font-size: 75px;
-    line-height: 130%; /* 88px */
+    line-height: 100%; /* 88px */
     display: flex;                 /* Dispone gli elementi in una riga */
     flex-direction: column; /* Fa sì che i figli principali siano impilati */
 }
@@ -785,6 +801,11 @@ footer img {
   height: auto;
 }
 
+.icon9 {
+  width: 85%; /* Dimensione desiderata */
+  height: auto;
+}
+
 .iconwt {
   width: 90%; /* Dimensione desiderata */
   height: auto;
@@ -792,6 +813,11 @@ footer img {
 
 .icontcp {
   width: 60%; /* Dimensione desiderata */
+  height: auto;
+}
+
+.icontcp1 {
+  width: 45%; /* Dimensione desiderata */
   height: auto;
 }
 
@@ -814,7 +840,7 @@ footer img {
     gap: 30px;
   }
 
-
+}
   
 
   .carrello {
@@ -935,6 +961,7 @@ footer img {
 .bottone {
   width: 100%; /* Larghezza del contenitore */
   margin: 0 auto; /* Centrare il contenitore orizzontalmente */
+  z-index: 3;
 }
 
 .checkout-button {
@@ -950,11 +977,13 @@ footer img {
   transition: background-color 0.3s ease; /* Effetto di transizione per il hover */
   font-family: "font normal";
   font-size: 24px;
+  z-index: 3;
 }
 
 /* Stile per l'hover */
 .checkout-button:hover {
   background-color: #E3FF51; /* Colore di sfondo leggermente diverso al passaggio del mouse */
+  z-index: 3;
 }
 
 
@@ -970,11 +999,13 @@ footer img {
   transition: background-color 0.3s ease; /* Effetto di transizione per il hover */
   font-family: "font normal";
   font-size: 24px;
+  z-index: 3;
 }
 
 /* Stile per l'hover */
 .checkout-buttoni1:hover {
   background-color: #E3FF51; /* Colore di sfondo leggermente diverso al passaggio del mouse */
+  z-index: 3;
 }
 
 
@@ -983,7 +1014,7 @@ footer img {
 
 
 
-}
+
 
 /*
 * {
