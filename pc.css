@@ -247,6 +247,24 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
     z-index: -1;         /* Impedisce che il video copra la scritta sopra */
 }
 
+.contenitorenero {
+  display: flex;                 /* Dispone gli elementi in una riga */
+  justify-content: center;       /* Centra il contenitore orizzontalmente */
+  align-items: center;           /* Centra verticalmente gli elementi */
+  gap: 20px;                     /* Spazio tra gli elementi */
+  margin-top: 50px;               /* Distanza dal bordo superiore della pagina */
+
+  position: absolute;  /* Posiziona la scritta sopra il video */
+  top: 40%;            /* Posiziona la scritta al centro verticalmente */
+  left: 50%;           /* Posiziona la scritta al centro orizzontalmente */
+  transform: translate(-50%, -50%); /* Centra esattamente la scritta */
+  text-align: center;  /* Allinea il testo al centro */
+  color: rgb(0, 0, 0);        /* Colore del testo */
+  font-family: "font watever";
+  font-size: 70px;
+  line-height: 100%; /* 88px */
+}
+
 
 .contenitore {
     display: flex;                 /* Dispone gli elementi in una riga */
@@ -271,7 +289,7 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
     justify-content: center;       /* Centra il contenitore orizzontalmente */
     align-items: center;           /* Centra verticalmente gli elementi */
     gap: 20px;                     /* Spazio tra gli elementi */
-    margin-top: 50px;               /* Distanza dal bordo superiore della pagina */
+    margin-top: 35px;               /* Distanza dal bordo superiore della pagina */
 
     position: absolute;  /* Posiziona la scritta sopra il video */
     top: 50%;            /* Posiziona la scritta al centro verticalmente */
@@ -282,6 +300,24 @@ margin-left: 50px;          /* Spazio tra le voci del menu */
     font-size: 70px;
     line-height: 100%; /* 88px */
 }
+
+.contenitore2nero {
+  display: flex;                 /* Dispone gli elementi in una riga */
+  justify-content: center;       /* Centra il contenitore orizzontalmente */
+  align-items: center;           /* Centra verticalmente gli elementi */
+  gap: 20px;                     /* Spazio tra gli elementi */
+  margin-top: 50px;               /* Distanza dal bordo superiore della pagina */
+
+  position: absolute;  /* Posiziona la scritta sopra il video */
+  top: 50%;            /* Posiziona la scritta al centro verticalmente */
+  left: 50%;           /* Posiziona la scritta al centro orizzontalmente */
+  transform: translate(-50%, -50%); /* Centra esattamente la scritta */
+  color: rgb(0, 0, 0);        /* Colore del testo */
+  font-family: "font watever";
+  font-size: 70px;
+  line-height: 100%; /* 88px */
+}
+
 
 .contenitore3 {
     display: flex;                 /* Dispone gli elementi in una riga */
@@ -473,7 +509,7 @@ margin-left: 100px;          /* Spazio tra le voci del menu */
     font-family: "font watever";
     font-size: 70px;
     font-weight: bold;
-    margin-bottom: 200px;
+    margin-bottom: 190px;
     justify-content: center;
     line-height: 1.1; /* Distanza 1.5 volte l'altezza del font */
 
@@ -817,7 +853,7 @@ footer img {
 }
 
 .icontcp1 {
-  width: 45%; /* Dimensione desiderata */
+  width: 52%; /* Dimensione desiderata */
   height: auto;
 }
 
