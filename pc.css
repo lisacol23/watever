@@ -944,6 +944,13 @@ footer img {
   margin-top: 15px;
 }
 
+.icon20 {
+  width: 85%; /* Dimensione desiderata */
+  height: auto;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
 .iconwt {
   width: 90%; /* Dimensione desiderata */
   height: auto;
